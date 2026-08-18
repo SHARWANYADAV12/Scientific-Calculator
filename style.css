@@ -18,13 +18,15 @@ body.light {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--bg);
   font-family: Arial;
   transition: 0.3s;
 }
+
 
 .calculator {
   background: var(--calc-bg);
@@ -84,3 +86,9 @@ button {
 button:hover { background: var(--btn-hover); transform: scale(1.05); }
 .equal { background: #ff9500; color: white; grid-column: span 2; }
 .equal:hover { background: #e68a00; }
+
+.footer {
+  margin-top: 20px;
+  color: #ff9500;
+  font-size: 14px;
+}
